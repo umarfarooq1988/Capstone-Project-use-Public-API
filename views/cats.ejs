@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express EJS Example</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="px-[100px] py-[100px] bg-gray-200">
+    <h2 class="text-center text-4xl bg-blue-300 py-[30px] px-[20px]">Cat Facts:</h2>
+    <ul class="mt-2 text-xl">
+        <% facts.forEach(fact=> { %>
+            <li class="my-4 py-[10px] px-[20px] w-full bg-green-50">
+                <%= fact.text %>
+            </li>
+            <% }); %>
+    </ul>
+</body>
+
+</html>

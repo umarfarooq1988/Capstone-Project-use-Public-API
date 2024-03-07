@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express EJS Example</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="px-[100px] py-[100px] bg-gray-200">
+    <h1 class="text-center text-4xl bg-blue-300 py-[30px] text-white font-bold px-[20px] rounded-md">
+        Facts about Cats
+    </h1>
+    <div class="grid grid-cols-4 gap-5 mt-3 w-full">
+        <div
+            class="w-fit text-center transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 rounded-md">
+            <a href="<%= baseUrl %>/cats">
+                <img src="/assets/cat.png" alt="Cat Image" class="w-[200px] h-[200px] rounded-t-md">
+                <div class="py-3 bg-blue-300 text-[20px] font-semibold text-white rounded-b-md">Cat</div>
+            </a>
+        </div>
+        <div
+            class="w-fit text-center transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 rounded-md">
+            <a href="<%= baseUrl %>/cats">
+                <img src="/assets/cb.png" alt="Cat Image" class="w-[200px] h-[200px] rounded-t-md">
+                <div class="py-3 bg-blue-300 text-[20px] font-semibold text-white rounded-b-md">Cat</div>
+            </a>
+        </div>
+        <div
+            class="w-fit text-center transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 rounded-md">
+            <a href="<%= baseUrl %>/cats">
+                <img src="/assets/c2.png" alt="Cat Image" class="w-[200px] h-[200px] rounded-t-md">
+                <div class="py-3 bg-blue-300 text-[20px] font-semibold text-white rounded-b-md">Cat</div>
+            </a>
+        </div>
+        <div
+            class="w-fit text-center transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 rounded-md">
+            <a href="<%= baseUrl %>/cats">
+                <img src="/assets/c3.png" alt="Cat Image" class="w-[200px] h-[200px] rounded-t-md">
+                <div class="py-3 bg-blue-300 text-[20px] font-semibold text-white rounded-b-md">Cat</div>
+            </a>
+        </div>
+
+    </div>
+</body>
+
+</html>
